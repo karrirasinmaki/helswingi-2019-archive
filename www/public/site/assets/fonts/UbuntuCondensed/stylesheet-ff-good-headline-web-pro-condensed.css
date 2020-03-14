@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ff-good-headline-web-pro-condensed';
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'),
+        url('UbuntuCondensed-Regular.woff2') format('woff2'),
+        url('UbuntuCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

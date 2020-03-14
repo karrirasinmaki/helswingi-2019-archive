@@ -1,0 +1,49 @@
+{
+  "hosting": {
+    "public": "public/site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "destination": "success.json"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/home",
+        "type": 301
+      },
+      {
+        "source": "/artists-folder",
+        "destination": "/all-artists",
+        "type": 301
+      },
+      {
+        "source": "/classes-menu",
+        "destination": "/classes",
+        "type": 301
+      },
+      {
+        "source": "/info-2",
+        "destination": "/info",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(css)*",
+        "headers": [ {
+          "key": "Content-Type",
+          "value": "text/css"
+        } ]
+      }
+    ]
+  }
+}
